@@ -10,6 +10,7 @@ gem 'less-rails-bootstrap'
 gem 'therubyracer'
 
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -23,6 +24,22 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development, :test do
+
+  gem 'sqlite3'
+  gem 'rspec-rails'
+  gem 'cucumber-rails'
+  gem 'cucumber-rails-training-wheels'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'jasmine'
+  gem 'jasmine-jquery-rails'
+  gem 'mutant'
+  gem 'mutant-rspec'
+  gem 'rspec'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
