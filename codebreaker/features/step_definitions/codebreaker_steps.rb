@@ -16,7 +16,7 @@ class Output
 		@messages ||= []
 	end
 
-	def puts(messages)
+	def puts(message)
 		messages << message
 	end
 end
